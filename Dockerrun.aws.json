@@ -7,7 +7,13 @@
       "environmentFiles": null,
       "logConfiguration": null,
       "entryPoint": null,
-      "portMappings": [],
+      "portMappings": [
+        {
+          "hostPort": 3306,
+          "protocol": "tcp",
+          "containerPort": 3306
+        }
+      ],
       "command": null,
       "linuxParameters": null,
       "cpu": 0,
@@ -113,7 +119,7 @@
       "dependsOn": [
         {
           "containerName": "mysql-server",
-          "condition": "START"
+          "condition": "HEALTHY"
         }
       ],
       "disableNetworking": null,
