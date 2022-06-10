@@ -6,5 +6,9 @@ COPY ./package.json ./
 RUN npm install
 COPY ./ ./
 
+## Add the wait script to the image
+ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.7.3/wait /wait
+RUN chmod +x /wait
+
 #start-up command
-CMD npm start
+CMD /wait && npm start
