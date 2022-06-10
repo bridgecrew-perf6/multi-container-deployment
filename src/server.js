@@ -6,7 +6,7 @@ const crypto = require("crypto");
 
 const env = require("./env");
 const mysql = require("mysql");
-// create connection object for the database
+
 const db = mysql.createConnection({
   host: env.msHost,
   user: env.msUser,
