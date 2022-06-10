@@ -34,7 +34,7 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": 128,
+      "memory": 500,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
@@ -94,12 +94,12 @@
           "value": "8888"
         },
         {
-          "name":"WAIT_HOSTS",
-          "value" :"mysql-server:3306"
+          "name": "WAIT_HOSTS",
+          "value": "mysql-server:3306"
         },
         {
-          "name":"WAIT_HOSTS_TIMEOUT",
-          "value" :"200"
+          "name": "WAIT_HOSTS_TIMEOUT",
+          "value": "200"
         }
       ],
       "resourceRequirements": null,
@@ -113,7 +113,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "042299228256.dkr.ecr.us-east-1.amazonaws.com/multicontainer-demo",
+      "image": "042299228256.dkr.ecr.us-east-1.amazonaws.com/multicontainer-demo:ffcd0b820008284dbdb0be6a97824d8e64c69d57",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": [
@@ -139,13 +139,13 @@
     }
   ],
   "placementConstraints": [],
-  "memory": null,
+  "memory": "700",
   "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:042299228256:task-definition/multi-container-app:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:042299228256:task-definition/multi-container-app:8",
   "family": "multi-container-app",
   "requiresAttributes": [
     {
@@ -168,7 +168,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": null,
-  "revision": 1,
+  "revision": 8,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
