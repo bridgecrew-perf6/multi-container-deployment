@@ -119,7 +119,7 @@
       "dependsOn": [
         {
           "containerName": "mysql-server",
-          "condition": "HEALTHY"
+          "condition": "START"
         }
       ],
       "disableNetworking": null,
